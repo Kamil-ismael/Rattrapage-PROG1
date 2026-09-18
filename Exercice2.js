@@ -5,3 +5,8 @@ function Echanger(tableau, premierIndex, deuxiemeIndex) {
 
     return tableau;
 }
+
+function Ranger(tableau) {
+	let indexGauche = 0;
+	let indexDroit = tableau.length - 1;
+}

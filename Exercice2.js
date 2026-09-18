@@ -44,4 +44,4 @@ function NombreUn(tableau) {
 console.log(NombreUn([0, 0, 0, 0, 1, 1]))
 
 module.exports = Echanger;
-module.exports = Ranger;
+module.exports = NombreUn;

@@ -12,5 +12,17 @@ function NegatifPositif(tableauEntier) {
 			positifs[nombrePositifs] = tableauEntier[i];
 			nombrePositifs += 1;
 		}
-	}
-}
+        
+        for (let i = 0; i < nombreNegatifsOuNuls; i++) {
+	    	tableauEntier[i] = negatifsOuNuls[i];
+	    }
+
+	    for (let i = 0; i < nombrePositifs; i++) {
+		tableauEntier[nombreNegatifsOuNuls + i] = positifs[i];
+	    }
+    }
+    return tableauEntier
+};
+console.log(NegatifPositif([-5, -3, 2, 4, 0]));
+
+module.exports = NegatifPositif;

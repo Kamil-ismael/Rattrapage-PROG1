@@ -24,5 +24,3 @@ function NegatifPositif(tableauEntier) {
     return tableauEntier
 };
 console.log(NegatifPositif([-5, -3, 2, 4, 0]));
-
-module.exports = NegatifPositif;

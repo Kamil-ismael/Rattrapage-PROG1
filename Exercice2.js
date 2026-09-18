@@ -28,4 +28,17 @@ function Ranger(tableau) {
 	}
 	return tableau;
 }
+
 console.log(Ranger([0, 1, 0, 0, 1, 0]))
+
+function NombreUn(tableau) {
+	let i = 0;
+
+	while (i < tableau.length && tableau[i] === 0) {
+		i++;
+	}
+
+	return tableau.length - i;
+}
+
+console.log(NombreUn([0, 0, 0, 0, 1, 1]))
